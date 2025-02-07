@@ -1,0 +1,293 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serifm;
+  font-family: "Rubik", serif;
+  font-size: 1.125rem;
+}
+
+.bg-gray-color {
+  background: #d4946d !important;
+}
+
+.bg-red-color {
+  background-color: #d01f29 !important;
+}
+
+.bg-blue-color {
+  background: #5fc5d4 !important;
+}
+
+.bg-sky-color {
+  background: #4caf50 !important;
+}
+
+.bg-whatsapp-color {
+  background-color: #25d366;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio (height / width * 100) */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+.font-style-logo {
+  font-family: "Rubik", serif;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #112868;
+  font-size: 26px;
+}
+
+.contact-us a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Rubik", serif;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.header .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+}
+.header .menu button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-weight: 600;
+  border: none;
+}
+
+.navbar .nav-link {
+  font-size: 16px;
+  margin: 0px 10px;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+#loadingSpinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.lazyload {
+  display: none;
+}
+
+.banner {
+  position: relative;
+}
+.banner__video-bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.banner__video-bg video {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+}
+.banner__details {
+  height: 100%;
+  height: 700px;
+}
+.banner__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner h1 {
+  font-size: 4em;
+  font-family: "Rubik", serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+.banner p {
+  font-family: "Rubik", serif;
+}
+.banner p strong {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Rubik", serif;
+}
+.banner p a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.section-heading-line-left {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #7bbb0a;
+  border-radius: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.title h1 {
+  color: #1a1a1a;
+  font-size: 2.0625rem;
+  line-height: 59px;
+  font-weight: 500;
+}
+
+.h3, h3 {
+  font-size: 1.5rem;
+}
+
+.about-us__website {
+  background-color: #1a1a1a;
+}
+.about-us__it {
+  background: #0f5fdc;
+  background-image: url(../images/hpe-acquisition-banner.avif);
+}
+.about-us__application {
+  background-image: url(../images/banner.jpg);
+}
+
+.projets .section-heading-line-left {
+  content: "";
+  margin: 0 auto;
+}
+.projets__details {
+  position: relative;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #000;
+  transition: color 0.3s ease;
+}
+.projets__details .text-content {
+  position: relative;
+  z-index: 2;
+}
+.projets__details.active {
+  background-image: url(../images/banner.jpg);
+  color: white;
+}
+.projets__details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
+}
+.projets__details:hover {
+  color: #fff;
+}
+.projets__details:hover::before {
+  left: 0;
+}
+
+.testimonials h1 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.testimonials p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #fff;
+}
+.testimonials p strong {
+  font-size: 1.5em;
+  line-height: 32px;
+  color: #fff;
+}
+
+.more-work p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.more-work p a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 2px solid #3ab4f1;
+  padding: 5px 10px 5px 10px;
+}
+
+.footer {
+  background-color: #24295f;
+}
+.footer .start-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.footer h4 {
+  font-family: "Inter", Helvetica, Arial, -apple-system, sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.footer p {
+  font-size: 18px;
+  color: #fff;
+}
+.footer ul {
+  padding-left: 0rem;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer ul a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+  text-decoration: none;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
