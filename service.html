@@ -20,7 +20,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-1">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-1 bg-navbar-img">
         <div class="container">
 
             <a class="navbar-brand font-style-logo py-0" href="/"><img height="45" src="images/logo.png "
@@ -40,12 +40,12 @@
                         <a class="nav-link text-uppercase" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="service.html">Services</a>
+                        <a class="nav-link text-uppercase" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase" href="#footer">Contact Us</a>
                     </li>
-             
+
 
                 </ul>
                 <div class="contact-us">
@@ -59,85 +59,21 @@
         </div>
     </nav>
 
-    <section class="banner">
-        <div class="banner__video-bg">
-            <div id="loadingSpinner"></div>
-
-            <!-- Video with Lazyload -->
-            <video id="myVideo" class="lazyload" autoplay muted loop oncanplay="hideLoader()">
-                <source data-src="movie.mp4" type="video/mp4">
-                <source data-src="video/ai-video.mp4" type="video/ogg">
-            </video>
-            
-        
-            
+    <div class="banner-inner position-relative ">
+        <img src="images/service.jpg" alt="img">
+        <div class="banner-inner__services">
+            <h1>  NEHAN Service.</h1>
+            <p>
+               
+                The Service  is the essential companion for PC gamers and creators. Keep your PC up to date with the
+                latest NEHAN drivers and technology. Optimize games and applications with a new unified GPU control
+                center, capture your favorite moments with powerful recording tools through the in-game overlay, and
+                discover the latest NEHAN tools and software.
+            </p>
         </div>
+    </div>
 
 
-
-        <div class="banner__details ">
-            <div class="container ">
-                <div class="banner__content">
-                    <h1 class="text-white">Hello, we’re Nehan </h1>
-                    <p>
-                        <strong class="text-white">We developing websites, mobile apps <br> and applications for small,
-                            medium and <br> large
-                            enterprises.</strong>
-                    </p>
-                    <p class="py-lg-5 text-white"> Want to know more? <a class="bg-sky-color"
-                            href="https://wa.me/9823846254"> Get in contact
-                            with us.</a></p>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section class="about-us  bg-light" id="about">
-        <div class="container">
-            <div class="about-us__details py-lg-5 p-3">
-                <div class="row g-5">
-
-                    <div class="col-lg-7">
-                        <div class="about-us__details  ">
-
-
-                            <div class="title">
-                                <h1>ABOUT THE COMPANY</h1>
-                                <div class="section-heading-line-left"></div>
-
-
-                            </div>
-                          
-                            <p>Nehan Tech Solution is an innovation focused &nbsp;tech company engaged in the business
-                                of developing, marketing, and selling a wide range of IT solutions and services. We
-                                provides superior Designing, Development, Consulting and Marketing Solutions and
-                                Services in the IT industry, Serving both the Domestic and International Sectors. We
-                                brings a fresh and innovative approach to IT services, acting as liaison between the
-                                end-user and the Clients. We specialize in providing services in the areas of Offshore
-                                Software Development Services, Mobile App development, Website Design and Development
-                                Solutions, Graphic Design and Multimedia Solutions, Internet Marketing and Search Engine
-                                Optimization Solutions, Content writing, Animation Services in Nepal.</p>
-                            <p>All our service offerings align with our mission of <strong>"Empowering businesses...
-                                    Transforming the future."</strong></p>
-
-                            <p></p>
-
-
-
-
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <img class="img-w" src="https://nehantechsolution.com/uploads/about/1738565507.jpg" alt="about">
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
     <section class="projets py-lg-5 p-3 ">
         <div class="container">
 
@@ -246,6 +182,7 @@
 
         </div>
     </section>
+
     <footer class="footer py-lg-5 py-3">
         <div class="container">
             <div class="row justify-content-center">
@@ -314,26 +251,26 @@
     </footer>
 
 
- 
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-        <script>
-            // Function to hide the loader when the video starts playing
-            function hideLoader() {
-                document.getElementById('loadingSpinner').style.display = 'none';
-            }
-    
-            // Lazy load video sources
-            window.addEventListener('load', () => {
-                const video = document.getElementById('myVideo');
-                Array.from(video.querySelectorAll('source')).forEach(source => {
-                    source.src = source.getAttribute('data-src');
-                });
-                video.load();
+    <script>
+        // Function to hide the loader when the video starts playing
+        function hideLoader() {
+            document.getElementById('loadingSpinner').style.display = 'none';
+        }
+
+        // Lazy load video sources
+        window.addEventListener('load', () => {
+            const video = document.getElementById('myVideo');
+            Array.from(video.querySelectorAll('source')).forEach(source => {
+                source.src = source.getAttribute('data-src');
             });
-        </script>
+            video.load();
+        });
+    </script>
 </body>
 </body>
 

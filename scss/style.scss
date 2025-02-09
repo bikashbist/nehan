@@ -55,7 +55,7 @@ body {
         text-decoration: none;
         color: #fff;
         font-family: "Rubik", serif;
-        padding: 15px 30px;
+        padding: 10px 20px;
         border-radius: 30px;
         font-size: 16px;
     }
@@ -197,6 +197,40 @@ body {
 .h3, h3 {
     font-size: 1.5rem;
 }
+.img-w {
+    width: 100%;
+}
+
+.banner-inner{
+    height: 600px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover   ;
+    }
+    &__about{
+        position: absolute; 
+        top: 30%;
+        left: 50%;
+        text-align: center;
+        width: 80%;
+        text-align: center;
+        color: #fff;
+        transform: translate(-50%, -50%);
+    }
+    &__services{
+        position: absolute;
+        top: 50%;
+        left: 26%;
+        /* text-align: center; */
+        width: 36%;
+        /* text-align: center; */
+        color: #fff;
+        transform: translate(-50%, -50%);
+    }
+
+}
 .about-us {
     &__website {
         background-color: #1a1a1a;
@@ -213,23 +247,25 @@ body {
 }
 
 .projets {
+    background-color: #000000;
      .section-heading-line-left {
         content: "";
         margin: 0 auto;
     }
     &__details {
         position: relative; // Necessary for positioning the pseudo-element
-        background: white;
+        background: #1a1a1a;
         background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;
-        color: #000;
+        color: fff;
         transition: color 0.3s ease;
 
         // Text container to ensure text stays above the pseudo-element
         .text-content {
             position: relative;
             z-index: 2; // Place text above the pseudo-element
+            color: #fff;
         }
 
         &.active {
@@ -301,7 +337,7 @@ body {
 }
 
 .footer {
-    background-color: #24295f;
+    background-color: #1f1f1f;
 
     .start-btn {
         padding: 12px 30px;
